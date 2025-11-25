@@ -81,7 +81,7 @@ export function StartCall({
 
             connect({
               auth: { type: "accessToken", value: accessToken },
-              configId: process.env.NEXT_PUBLIC_HUME_CONFIG_ID,
+              configId: env.NEXT_PUBLIC_HUME_CONFIG_ID,
               sessionSettings: {
                 type: "session_settings",
                 variables: {

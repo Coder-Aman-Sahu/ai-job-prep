@@ -5,7 +5,6 @@ import {
   AvatarImage,
 } from "../../../components/ui/avatar"
 
-
 export function UserAvatar({
   user,
   ...props
