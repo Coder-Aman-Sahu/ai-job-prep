@@ -1,11 +1,12 @@
-import { ThemeToggle } from "@/components/ui/ThemeToggle"
+import { ThemeToggle } from "@/components/ThemeToggle"
+import { PricingTable } from "@/services/clerk/components/PricingTable"
 import { SignInButton, UserButton } from "@clerk/nextjs"
 import { User } from "@clerk/nextjs/server"
 
 export default function HomePage() {
   return (
     <div className="p-4 space-y-4">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 " suppressHydrationWarning>
       <SignInButton />
       
       <UserButton />
@@ -13,6 +14,7 @@ export default function HomePage() {
       <ThemeToggle />
       
     </div>
+    <PricingTable />
     </div>
   )
 }
