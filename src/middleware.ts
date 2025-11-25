@@ -6,6 +6,7 @@ const isPublicRoute = createRouteMatcher([
   "/sign-in(.*)",
   "/",
   "/api/webhooks(.*)",
+  "/onboard(.*)",
 ])
 
 const aj = arcjet({
